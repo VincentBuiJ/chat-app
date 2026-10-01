@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Chat</title>
+    <link rel="stylesheet" href='styles/styles.css'>
+
+</head>
+
+<body class="background-color">
+    <div class="logo">
+        <img width="400" src="assets/images.png">
+    </div>
+
+    <div class="talk_con">
+        <div class="talk_show" id="words">
+            <div class="atalk"><span id="asay">A says：How's it going？</span></div>
+            <div class="btalk"><span id="bsay">B says：Pretty good,and you？</span></div>
+        </div>
+        <div class="talk_input">
+            <select class="whotalk" id="who">
+                <option value="0">A</option>
+                <option value="1">B</option>
+            </select>
+            
+            <form id="form" action="">
+                <input type="text" class="talk_word" id="input" autocomplete="off" />
+                <button style="height:30px;width:60px; font-weight:bold;" class="talk1"> SEND</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="scripts/chat.js"></script>
+    <script src="scripts/script.js"></script>
+
+
+
+</body>
+
+</html>
